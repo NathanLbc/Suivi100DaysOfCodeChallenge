@@ -4,6 +4,9 @@
     <nuxt-link to="/map">Map</nuxt-link>
     <nuxt-link to="/reduce">Reduce</nuxt-link>
     <nuxt-link to="/filter">Filter</nuxt-link>
+    <nuxt-link to="/async">Async</nuxt-link>
+    <nuxt-link to="/promises">Promises</nuxt-link>
+
     <Nuxt />
   </div>
 </template>
