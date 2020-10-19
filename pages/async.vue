@@ -1,29 +1,26 @@
 <template>
   <div class="container">
-    <button v-on:click="async">Async</button>
+    <button v-on:click="asyncExample">Async</button>
   </div>
 </template>
 
 <script>
 export default {
-  data: {
-    tableauFake: [],
-  },
   methods: {
-    async: async function () {
-      async function externe(){
+    asyncExample: async function () {
+      async function external(){
         for (let i = 0; i<1000; i++)
         console.log(i)
       }
 
 
-      async function programme(){
+      async function test(){
         console.log('start')
-        let resultat = await externe();
+        let resultat = await external();
         console.log('over')
         
       }
-      programme();
+      test();
     }
   }
 }
