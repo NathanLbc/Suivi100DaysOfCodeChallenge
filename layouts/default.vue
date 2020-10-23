@@ -6,6 +6,8 @@
     <nuxt-link to="/filter">Filter</nuxt-link>
     <nuxt-link to="/async">Async</nuxt-link>
     <nuxt-link to="/promises">Promises</nuxt-link>
+    <nuxt-link to="/computed">Computed</nuxt-link>
+
 
     <Nuxt />
   </div>

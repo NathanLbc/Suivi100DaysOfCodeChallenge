@@ -1,8 +1,7 @@
 <template>
   <div class="container">
-    <button v-on:click="creationData">Création des données</button>
-    <button v-on:click="async">Fonction asynchrone</button>
-    <li></li>
+    <button v-on:click="promiseTest">Promise</button>
+    <li>{{ promise }}</li>
   </div>
 </template>
 
@@ -10,28 +9,25 @@
 export default {
   data: function () {
     return {
-      tableauFake: [],
+      
+        promise: [],
+      
     }
   },
   methods: {
-    creationData: function () {
-      for (let i = 0; i < 1000; i++) {
-        this.tableauFake.push({
-          test: 'coucou : ' + i,
-          number: 8,
-        })
-      }
+    promiseTest: function () {
+      
+      const promise1 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve('foo');
+        }, 1000);
+      });
+      promise1.then((value) => {
+        this.promise.push(value)
+      });
+      
     },
-    async: function () {
-      this.tableauFake.foreach(
-        element => 
-          console.log('ok'),
-        
-      setTimeout(this.element, 0),
-
-      console.log("Hi there"),
-      )
-    },
+    
   },
 }
 </script>

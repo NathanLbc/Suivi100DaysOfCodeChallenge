@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <li v-for="officer in officers" :key="officer.Index">{{ officers }}</li>
     <li id="officers" v-for="officer in officersStatus" :key="officer.name">{{ officer.name }}</li>
     <button v-on:click="deadOfficerMethod">Who is dead ?</button>
     <button v-on:click="aliveOfficerMethod">Who is still alive ?</button>

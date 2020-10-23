@@ -7,9 +7,9 @@
 <script>
 export default {
   methods: {
-    asyncExample: async function () {
-      async function external(){
-        for (let i = 0; i<1000; i++)
+    asyncExample: function () {
+      function external(){
+        for (let i = 0; i<30; i++)
         console.log(i)
       }
 

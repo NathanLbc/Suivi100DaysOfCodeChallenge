@@ -1,5 +1,10 @@
 <template>
   <div class="container">
+    <ul>
+      <li v-for="officer in officers" :key="officer.Index">
+        <div>{{ officer }}</div>
+      </li>
+    </ul>
     <p id="officers">{{ officersId }}</p>
     <button v-on:click="officersIdMethod">Activate</button>
   </div>
@@ -20,7 +25,7 @@ export default {
   },
   methods: {
     officersIdMethod: function () {
-        console.log("click");
+      console.log('click')
       this.officersId = this.officers.map(function (officers) {
         return officers.id
       })
