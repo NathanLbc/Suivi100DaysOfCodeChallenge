@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <button v-on:click="asyncExample">Async</button>
+    <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" v-on:click="asyncExample">Async</button>
   </div>
 </template>
 
@@ -25,3 +25,8 @@ export default {
   }
 }
 </script>
+<style>
+.container {
+  text-decoration-color: blanchedalmond;
+}
+</style>

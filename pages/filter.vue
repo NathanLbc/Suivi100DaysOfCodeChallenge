@@ -1,9 +1,8 @@
 <template>
   <div class="container">
-    <li v-for="officer in officers" :key="officer.Index">{{ officers }}</li>
-    <li id="officers" v-for="officer in officersStatus" :key="officer.name">{{ officer.name }}</li>
-    <button v-on:click="deadOfficerMethod">Who is dead ?</button>
-    <button v-on:click="aliveOfficerMethod">Who is still alive ?</button>
+    <li id="officers" class="white-text" v-for="officer in officersStatus" :key="officer.name">{{ officer.name }}</li>
+    <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" v-on:click="deadOfficerMethod">Who is dead ?</button>
+    <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" v-on:click="aliveOfficerMethod">Who is still alive ?</button>
 
   </div>
 </template>
@@ -37,3 +36,8 @@ export default {
   },
 }
 </script>
+<style>
+.white-text {
+  color: white;
+}
+</style>
