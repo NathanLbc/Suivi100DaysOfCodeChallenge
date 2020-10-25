@@ -2,42 +2,42 @@
   <div>
       <div class="menu">
         <nuxt-link to="/">
-        <div class="menu-btn round-lg">
-          <div class="titre">Accueil</div>
+        <div class="menu-btn round-lg border">
+          <div class="titre">Home</div>
         </div>
       </nuxt-link>
       <nuxt-link to="/map">
-        <div class="menu-btn round-lg">
+        <div class="menu-btn round-lg border">
           <div class="titre">Map</div>
         </div>
       </nuxt-link>
 
       <nuxt-link to="/reduce">
-        <div class="menu-btn round-lg">
+        <div class="menu-btn round-lg border">
           <div class="titre">Reduce</div>
         </div>
       </nuxt-link>
 
       <nuxt-link to="/filter">
-        <div class="menu-btn round-lg">
+        <div class="menu-btn round-lg border">
           <div class="titre">Filter</div>
         </div>
       </nuxt-link>
 
       <nuxt-link to="/async">
-        <div class="menu-btn round-lg">
+        <div class="menu-btn round-lg border">
           <div class="titre">Async</div>
         </div>
       </nuxt-link>
 
       <nuxt-link to="/promises">
-        <div class="menu-btn round-lg">
+        <div class="menu-btn round-lg border">
           <div class="titre">Promises</div>
         </div>
       </nuxt-link>
 
       <nuxt-link to="/computed">
-        <div class="menu-btn round-lg">
+        <div class="menu-btn round-lg border">
           <div class="titre">Computed</div>
         </div>
       </nuxt-link>
@@ -54,14 +54,17 @@
   justify-content: top;
   align-items: top;
   text-align: top;
+  color:white;
 }
 .menu {
   width: 15%;
   position: fixed;
 }
+.titre {
+  padding: 30px ;}
 .menu-btn {
   font-size: 25px;
-  color: grey;
+  color: lightgrey;
   background-color: #020a53;
   width: 100%;
   height: 100px;

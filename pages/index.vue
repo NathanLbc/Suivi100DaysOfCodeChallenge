@@ -1,7 +1,6 @@
 <template>
     <div class="container">
-      Voici un site dans lequel je vais poster un suivi de mon avancée dans le
-      #100DaysOfCode Challenge :)
+      Here is the basic structure of the website I'll build in order the keep a mark of my progression during the 100DaysOfCode
     </div>
 </template>
 
