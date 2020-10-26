@@ -36,7 +36,16 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/proxy'
   ],
+  proxy: {
+    '/api': {
+      target: 'https://api.twitter.com',
+      pathRewrite: {
+        '^/api' : "/"
+      }
+    }
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
