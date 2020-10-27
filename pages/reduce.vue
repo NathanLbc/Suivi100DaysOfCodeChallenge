@@ -1,8 +1,19 @@
 <template>
   <div class="container">
+    <div class="title">Reduce</div>
+
+    <li v-for="officer in officers" :key="officer.name">{{ officer }}</li>
     <p id="officers">{{ result }}</p>
-    <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" v-on:click="totalYearsMethod">Total experience</button>
-    <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" v-on:click="mostExpericencedMethod">
+    <button
+      class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+      v-on:click="totalYearsMethod"
+    >
+      Total experience
+    </button>
+    <button
+      class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+      v-on:click="mostExpericencedMethod"
+    >
       Who is the most experienced officer ?
     </button>
   </div>

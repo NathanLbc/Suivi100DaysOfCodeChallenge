@@ -1,7 +1,7 @@
 <template>
   <div>
-      <div class="menu">
-        <nuxt-link to="/">
+    <div class="menu">
+      <nuxt-link to="/">
         <div class="menu-btn round-lg border">
           <div class="titre">Home</div>
         </div>
@@ -52,6 +52,11 @@
 </template>
 
 <style>
+.side-menu {
+  height: 15%;
+  width: 15%;
+  background-color: lightgrey;
+}
 .container {
   margin: 0 0 0 15%;
   padding-left: 2%;
@@ -59,14 +64,16 @@
   justify-content: top;
   align-items: top;
   text-align: top;
-  color:white;
+  color: white;
 }
 .menu {
   width: 15%;
   position: fixed;
+  background-color: lightgrey;
 }
 .titre {
-  padding: 30px ;}
+  padding: 30px;
+}
 .menu-btn {
   font-size: 25px;
   color: lightgrey;
@@ -74,7 +81,7 @@
   width: 100%;
   height: 100px;
   text-align: center;
-  display:inline-block;
+  display: inline-block;
 }
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
