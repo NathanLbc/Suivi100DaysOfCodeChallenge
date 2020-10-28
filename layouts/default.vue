@@ -46,6 +46,11 @@
           <div class="titre">asyncData</div>
         </div>
       </nuxt-link>
+      <nuxt-link to="/loops">
+        <div class="menu-btn round-lg border">
+          <div class="titre">Loops</div>
+        </div>
+      </nuxt-link>
     </div>
     <Nuxt />
   </div>
